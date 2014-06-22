@@ -33,7 +33,7 @@
 ;; Delete trailing whitespace
 (defvar delete-whitespace-modes-list
   (list 'emacs-lisp-mode 'python-mode 'c-mode 'c++-mode 'html-mode 'js-mode
-        'jinja2-mode 'cuda-mode))
+        'jinja2-mode 'cuda-mode 'clojure-mode))
 (defun delete-trailing-whitespace-by-mode ()
    "Delete trailing whitespaces if major mode want to do."
    (interactive)

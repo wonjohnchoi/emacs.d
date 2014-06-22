@@ -48,6 +48,7 @@
 
 ;; Clojure
 (depends-on "cider")
+(depends-on "clojure-mode")
 
 ;; C/C++
 (depends-on "auto-complete-clang")

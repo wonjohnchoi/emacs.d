@@ -6,6 +6,9 @@
 
 (require 'utils)
 
+;; Add Cask to emacs-lisp-mode
+(add-to-list 'auto-mode-alist '("Cask\\'" . emacs-lisp-mode))
+
 ;; Load path
 (defvar plugin-dir)
 (setq plugin-dir (join-paths emacs-dir "plugin"))

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: If main
+# key: ifmain
+# expand-env: ((yas/indent-line 'auto) (yas/also-auto-indent-first-line 'nil) (yas/wrap-around-region 'nil))
+# --
+if __name__ == '__main__':
+    $0

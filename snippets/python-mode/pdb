@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pdb breakpoint
+# key: pdb
+# expand-env: ((yas/indent-line 'auto) (yas/also-auto-indent-first-line 'nil) (yas/wrap-around-region 'nil))
+# --
+import pdb; pdb.set_trace()
+$0

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: SQLAlchemy relationship
+# key: sqla_relationship
+# expand-env: ((yas/indent-line 'auto) (yas/also-auto-indent-first-line 'nil) (yas/wrap-around-region 'nil))
+# --
+${1:field}${2:_id} = ${3:db.}Column(
+    $3${4:Integer},
+    $3ForeignKey('${5:$1}.${6:id}', ondelete='${7:CASCADE}')
+)
+${8:$1} = relationship('${9:Model}')
+$0

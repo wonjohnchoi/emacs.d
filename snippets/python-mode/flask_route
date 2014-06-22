@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Flask Route
+# key: flask_route
+# expand-env: ((yas/indent-line 'auto) (yas/also-auto-indent-first-line 'nil) (yas/wrap-around-region 'nil))
+# --
+
+@${1:app}.route('/$2', methods=[${3:'GET'}])
+def ${4:view}($5):
+    """$6
+    """
+    $0

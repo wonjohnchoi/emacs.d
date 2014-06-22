@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: SQLAlchemy Model
+# key: sqla_model
+# expand-env: ((yas/indent-line 'fixed))
+# --
+
+class ${1:Model}(${2:Base}):
+    __tablename__ = '${3:table}'
+    
+    id = ${4:db.}Column($4Integer, primary_key=True)
+    $0

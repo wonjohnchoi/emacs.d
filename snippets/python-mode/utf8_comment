@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: UTF-8 comment
+# key: utf8_comment
+# expand-env: ((yas/indent-line 'auto) (yas/also-auto-indent-first-line 'nil) (yas/wrap-around-region 'nil))
+# --
+# -*- encoding: utf-8 -*-

@@ -11,7 +11,7 @@
 (setq plugin-dir (join-paths emacs-dir "plugin"))
 (add-to-list 'load-path emacs-dir)
 (add-to-list 'load-path plugin-dir)
-(add-to-list 'load-path (join-paths emacs-dir "java-libs" "jdee" "lisp"))
+(add-to-list 'load-path (join-paths emacs-dir "java-libs" "lisp"))
 (when platform-mac? (add-to-list 'load-path
                                  "/usr/local/Cellar/gettext/0.18.3.1/share/emacs/site-lisp"))
 (add-to-list 'custom-theme-load-path (join-paths emacs-dir "themes" "solarized"))

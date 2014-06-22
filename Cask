@@ -51,7 +51,6 @@
 
 ;; C/C++
 (depends-on "auto-complete-clang")
-(depends-on "mf")
 
 ;; Android
 (depends-on "android-mode")

@@ -14,6 +14,9 @@
 (add-to-list 'load-path (file-name-directory load-file-name))
 (add-to-list 'load-path (concat (file-name-directory load-file-name) "src"))
 
+;; Add .emacs to emacs-lisp-mode
+(add-to-list 'auto-mode-alist '(".emacs\\'" . emacs-lisp-mode))
+
 ;; Load packages
 (require 'cask)
 (cask-initialize)

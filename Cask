@@ -48,6 +48,7 @@
 
 ;; Clojure
 (depends-on "cider")
+(depends-on "ac-nrepl")
 (depends-on "clojure-mode")
 
 ;; C/C++

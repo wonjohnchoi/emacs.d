@@ -56,3 +56,6 @@
 
 ;; Android
 (depends-on "android-mode")
+
+;; Markdown
+(depends-on "mkdown")

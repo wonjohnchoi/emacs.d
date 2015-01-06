@@ -39,6 +39,7 @@
 ;; Utils
 (depends-on "redo+")
 (depends-on "mmm-mode")
+(depends-on "flymake-cursor")
 
 ;; Python
 (depends-on "python")

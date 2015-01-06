@@ -6,7 +6,6 @@
 (require 'cider)
 (require 'ac-nrepl)
 (require 'nrepl-client)
-(require 'clojure-test-mode)
 
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 (setq nrepl-hide-special-buffers t)
@@ -32,20 +31,6 @@
 
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
-
-;; Auto reload
-(defun clojure-test-reload-and-run-test ()
-  "Reload namespaces and run test."
-  (interactive)
-  (nrepl-send-string-sync
-   "(refresh)")
-  (clojure-test-run-tests))
-(add-hook 'cider-mode-hook
-          (lambda ()
-            (nrepl-send-string-sync
-             "(use '[clojure.tools.namespace.repl :only (refresh)])")
-            (local-set-key (kbd "<f6>")
-                                     'clojure-test-reload-and-run-test)))
 
 (provide 'clojure-dev)
 ;;; clojure-dev.el ends here

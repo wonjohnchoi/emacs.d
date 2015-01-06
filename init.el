@@ -11,7 +11,6 @@
   (setq flycheck-emacs-lisp-load-path load-path))
 
 (add-hook 'flycheck-before-syntax-check-hook #'flycheck-load-path-hook)
-(add-to-list 'load-path (file-name-directory load-file-name))
 (add-to-list 'load-path (concat (file-name-directory load-file-name) "src"))
 
 ;; Add .emacs to emacs-lisp-mode

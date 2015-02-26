@@ -5,54 +5,8 @@
 
 ;; Utils
 (require 'utils)
-
-;; Speed bar
-(require 'sr-speedbar)
-(setq speedbar-frame-parameters
-      '((minibuffer)
-	(width . 20)
-	(border-width . 0)
-	(menu-bar-lines . 0)
-	(tool-bar-lines . 0)
-	(unsplittable . t)
-	(left-fringe . 0)))
-(setq sr-speedbar-max-width 20)
-(setq sr-speedbar-width-console 20)
-(setq sr-speedbar-auto-refresh nil)
-(setq speedbar-hide-button-brackets-flag t)
-(setq speedbar-show-unknown-files t)
-(setq speedbar-smart-directory-expand-flag t)
-(setq speedbar-use-images nil)
-(setq speedbar-update-flag nil)
-
-;; speed bar left side
-(setq sr-speedbar-right-side nil)
-;; Auto refresh
-(sr-speedbar-refresh-turn-off)
-
-;; speedbar toggle
-(defun my-speedbar ()
-  "Toggle sr-speedbar and select."
-  (interactive)
-  (progn
-    (sr-speedbar-toggle)
-    (if (sr-speedbar-exist-p)
-        (sr-speedbar-select-window))))
-
-;; Key C-x p
-(global-set-key (kbd "C-x p") 'my-speedbar)
-
-;; Disable expand all (takes too long)
-(defun speedbar-expand-line-descendants (&OPTIONAL ARG)
-  "Expand &OPTIONAL ARG." ())
-
-;; Tags
-(speedbar-add-supported-extension ".js")
-(add-to-list 'speedbar-fetch-etags-parse-list
-             '("\\.js" . speedbar-parse-c-or-c++tag))
-(speedbar-add-supported-extension ".py")
-(add-to-list 'speedbar-fetch-etags-parse-list
-             '("\\.py" . speedbar-parse-c-or-c++tag))
+;(require 'my-speedbar)
+;(require 'my-tabbar)
 
 ;; Highlight brackets
 (show-paren-mode t)
@@ -74,19 +28,6 @@
   (defvar mouse-sel-mode)
   (setq mouse-sel-mode t))
 
-;; Tabbar
-(require 'tabbar)
-(require 'tabbar-ruler)
-
-(setq tabbar-ruler-global-tabbar t)
-(global-set-key (kbd "C-x t") 'tabbar-ruler-move)
-
-(tabbar-mode)
-(global-set-key [C-left] 'tabbar-backward-tab)
-(global-set-key [C-right] 'tabbar-forward-tab)
-(global-set-key (kbd "C-x <left>") 'tabbar-backward-tab)
-(global-set-key (kbd "C-x <right>") 'tabbar-forward-tab)
-
 ;; UTF-8
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)
@@ -107,14 +48,14 @@
 (defvar x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
 ;; Redo
-(require 'redo+)
-(global-set-key (kbd "C-u") 'undo)
-(global-set-key (kbd "C-r") 'redo)
+; (require 'redo+)
+; (global-set-key (kbd "C-u") 'undo)
+; (global-set-key (kbd "C-r") 'redo)
 
 ;; ido
-(require 'ido)
-(ido-mode t)
-(setq ido-enable-flex-matching t) ;; enable fuzzy matching
+; (require 'ido)
+; (ido-mode t)
+; (setq ido-enable-flex-matching t) ;; enable fuzzy matching
 
 ;; Linum
 (require 'linum)

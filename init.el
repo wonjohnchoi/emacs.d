@@ -20,7 +20,7 @@
 
 ;; Load packages
 (require 'cask)
-(cask-initialize)
+;(cask-initialize)
 (require 'utils)
 (require 'platforms)
 (require 'packages)
@@ -30,18 +30,18 @@
 
 ;; Commons
 (require 'backup)
-(require 'commons)
+;(require 'commons)
 (require 'keys)
 (require 'scroll)
 
 ;;;; Development
-(require 'dev)
-(require 'javascript-dev)
-(require 'python-dev)
-(require 'cpp-dev)
-(require 'cuda-dev)
-(require 'java-dev)
-(require 'android-dev)
-(require 'clojure-dev)
+;(require 'dev)
+;(require 'javascript-dev)
+;(require 'python-dev)
+;(require 'cpp-dev)
+;(require 'cuda-dev)
+;(require 'java-dev)
+;(require 'android-dev)
+;(require 'clojure-dev)
 
 ;;; init.el ends here

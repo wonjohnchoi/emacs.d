@@ -37,9 +37,9 @@
 (defvar x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
 ;; Redo
-; (require 'redo+)
-; (global-set-key (kbd "C-u") 'undo)
-; (global-set-key (kbd "C-r") 'redo)
+(require 'redo+)
+(global-set-key (kbd "C-u") 'undo)
+(global-set-key (kbd "C-r") 'redo)
 
 ;; ido
 ; (require 'ido)

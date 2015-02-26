@@ -63,8 +63,5 @@
 (global-set-key (kbd "M-h") 'backward-kill-word)
 (global-set-key (kbd "C-\\") 'kill-region)
 
-; Mouse over ssh
-(xterm-mouse-mode 1)
-
 (provide 'keys)
 ;;; keys.el ends here

@@ -7,7 +7,7 @@
 (require 'utils)
 ;(require 'my-speedbar)
 ;(require 'my-tabbar)
-;(require 'my-yasnippet)
+(require 'my-yasnippet)
 
 ;; Highlight brackets
 (show-paren-mode t)

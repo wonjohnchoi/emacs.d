@@ -30,7 +30,7 @@
 
 ;; Commons
 (require 'backup)
-;(require 'commons)
+(require 'commons)
 (require 'keys)
 (require 'scroll)
 

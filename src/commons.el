@@ -52,7 +52,7 @@
 (setq linum-format "%3d ")
 
 ;; eww
-(require 'eww)
+;(require 'eww)
 
 (provide 'commons)
 ;;; commons.el ends here

@@ -35,7 +35,7 @@
 (require 'scroll)
 
 ;;;; Development
-;(require 'dev)
+(require 'dev)
 ;(require 'javascript-dev)
 ;(require 'python-dev)
 ;(require 'cpp-dev)

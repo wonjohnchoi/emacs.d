@@ -14,3 +14,5 @@
 
 (add-hook 'after-change-major-mode-hook
           (lambda () (add-to-list 'ac-sources 'ac-source-yasnippet)))
+
+(provide my-yasnippet)

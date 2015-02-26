@@ -45,3 +45,5 @@
 (speedbar-add-supported-extension ".py")
 (add-to-list 'speedbar-fetch-etags-parse-list
              '("\\.py" . speedbar-parse-c-or-c++tag))
+
+(provide my-speedbar)

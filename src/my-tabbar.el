@@ -10,3 +10,5 @@
 (global-set-key [C-right] 'tabbar-forward-tab)
 (global-set-key (kbd "C-x <left>") 'tabbar-backward-tab)
 (global-set-key (kbd "C-x <right>") 'tabbar-forward-tab)
+
+(provide 'my-tabbar)

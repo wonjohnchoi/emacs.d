@@ -20,7 +20,7 @@
 
 ;; Load packages
 (require 'cask)
-;(cask-initialize)
+(cask-initialize)
 (require 'utils)
 (require 'platforms)
 (require 'packages)

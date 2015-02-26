@@ -1,3 +1,4 @@
+
 ;;; keys --- Key bindings
 ;;; Commentary:
 ;;; Key binding settings
@@ -55,6 +56,15 @@
 
 ;; Delete seleted text when typing
 (delete-selection-mode 1)
+
+; copied from my cs164 .emacs file
+(global-set-key (kbd "M-;") 'goto-line)
+(global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "M-h") 'backward-kill-word)
+(global-set-key (kbd "C-\\") 'kill-region)
+
+; Mouse over ssh
+(xterm-mouse-mode 1)
 
 (provide 'keys)
 ;;; keys.el ends here

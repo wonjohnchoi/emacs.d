@@ -16,6 +16,8 @@
 ;; Add .emacs to emacs-lisp-mode
 (add-to-list 'auto-mode-alist '(".emacs\\'" . emacs-lisp-mode))
 
+(add-to-list 'load-path "~/.cask")
+
 ;; Load packages
 (require 'cask)
 (cask-initialize)

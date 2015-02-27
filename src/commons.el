@@ -51,6 +51,9 @@
 (global-linum-mode)
 (setq linum-format "%3d ")
 
+;; Ace Jump Char Mode
+(global-set-key (kbd "C-g") 'ace-jump-char-mode)
+
 ;; eww
 ;(require 'eww)
 

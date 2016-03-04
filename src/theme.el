@@ -26,14 +26,6 @@
 ;; Font
 (if (or platform-windows? platform-mac?)
     (set-face-attribute 'default nil :family (if platform-windows? "Consolas" "Monaco")))
-;; Non-ASCII character font
-(defvar non-ascii-range '(256 . 921599))
-(when platform-windows? (set-fontset-font "fontset-default" non-ascii-range
-                                          (font-spec :family "Malgun Gothic")))
-(when platform-mac? (set-fontset-font "fontset-default" non-ascii-range
-                                      (font-spec :family "Apple SD Gothic Neo")))
-(when platform-linux? (set-fontset-font "fontset-default" non-ascii-range
-                                        (font-spec :family "NanumGothic")))
 
 (provide 'theme)
 ;;; theme.el ends here

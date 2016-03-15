@@ -3,7 +3,7 @@
 ;;; My Emac init settings
 
 ;;; Code:
-
+(setq auto-save-default nil)
 (setq debug-on-error t)
 (defvar flycheck-emacs-lisp-load-path)
 (defun flycheck-load-path-hook ()
